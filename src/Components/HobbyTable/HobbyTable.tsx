@@ -26,7 +26,7 @@ const HobbyTable:  React.FC<{ userHobbyData: any, userName: String, handleConfir
 
     const getHobbyItem = (hobby: any, index: any) => {
         return (<div key={index} className="hobbyItems">
-            <div>
+            <div className="passionBlock">
             <label>Passion: </label>
             <span>{hobby.passion}</span>
             </div>
