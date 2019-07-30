@@ -1,0 +1,50 @@
+.ReactTable {
+  margin: 0 auto;
+  width: 90%;
+}
+span {
+  text-align: center;
+  display: inline-block;
+  margin: 0.3em 0;
+}
+span button,
+span a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #04a6ee;
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  padding-right: 5px;
+}
+.crudSection span {
+  display: block;
+  cursor: pointer;
+}
+.userHobbyDetails{
+  display: flex;
+  background-color: DodgerBlue;
+  flex-wrap: nowrap;
+}
+.userHobbyDetails> div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  width: 100%;
+}
+.userLists {
+  display: flex;
+  flex-direction: column;
+}
+.userLists > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 10px;
+  font-size: 18px;
+}
+
