@@ -1,0 +1,15 @@
+7429799d6306064aaf0913604753415a
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.PostType = void 0;
+let PostType;
+exports.PostType = PostType;
+
+(function (PostType) {
+  PostType["POST"] = "POST";
+  PostType["PUT"] = "PUT";
+})(PostType || (exports.PostType = PostType = {}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludGVyZmFjZXMudHMiXSwibmFtZXMiOlsiUG9zdFR5cGUiXSwibWFwcGluZ3MiOiI7Ozs7OztJQWFZQSxROzs7V0FBQUEsUTtBQUFBQSxFQUFBQSxRO0FBQUFBLEVBQUFBLFE7R0FBQUEsUSx3QkFBQUEsUSIsInNvdXJjZXNDb250ZW50IjpbIlxuZXhwb3J0IGludGVyZmFjZSBIb2JiaWVzIHtcbiAgcGFzc2lvbjogc3RyaW5nO1xuICBuYW1lOiBzdHJpbmc7XG4gIHllYXI6IHN0cmluZyB8IG51bWJlcjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBVc2VySG9iYnkge1xuICBpZDogc3RyaW5nO1xuICBuYW1lOiBzdHJpbmc7XG4gIGhvYmJpZXM6IEFycmF5PEhvYmJpZXM+O1xufVxuXG5leHBvcnQgZW51bSBQb3N0VHlwZSB7XG4gIFBPU1QgPSAnUE9TVCcsXG4gIFBVVCA9ICdQVVQnXG59XG4iXX0=

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserForm Component renders snapshots, too 1`] = `
+<div
+  className="userAddform"
+>
+  <input
+    className="nameBox"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+</div>
+`;

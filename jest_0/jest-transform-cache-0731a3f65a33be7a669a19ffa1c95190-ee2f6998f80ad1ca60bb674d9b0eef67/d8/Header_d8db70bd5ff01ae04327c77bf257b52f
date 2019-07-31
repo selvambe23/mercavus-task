@@ -1,0 +1,41 @@
+0daac3aca50332b35081484d7d241519
+"use strict";
+
+var _interopRequireDefault = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _jsxFileName = "/Users/selvam_m1/Challenges/mercavus-task-challenge/src/Components/Header/Header.tsx";
+
+const Header = () => _react.default.createElement("div", {
+  className: "header",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: void 0
+}, _react.default.createElement("div", {
+  className: "header-content",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}, _react.default.createElement("img", {
+  src: "https://cdn.shopify.com/s/files/1/0003/1938/9747/files/Mercavus-Logo-White_1024x1024.png?v=1539856605",
+  alt: "logo",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: void 0
+})));
+
+var _default = Header;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhlYWRlci50c3giXSwibmFtZXMiOlsiSGVhZGVyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7OztBQUVBLE1BQU1BLE1BQU0sR0FBRyxNQUNiO0FBQUssRUFBQSxTQUFTLEVBQUMsUUFBZjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxHQUNFO0FBQUssRUFBQSxTQUFTLEVBQUMsZ0JBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsR0FDSTtBQUNFLEVBQUEsR0FBRyxFQUFDLHVHQUROO0FBRUUsRUFBQSxHQUFHLEVBQUMsTUFGTjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxFQURKLENBREYsQ0FERjs7ZUFXZUEsTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IEhlYWRlciA9ICgpID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXJcIj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1jb250ZW50XCI+XG4gICAgICAgIDxpbWdcbiAgICAgICAgICBzcmM9XCJodHRwczovL2Nkbi5zaG9waWZ5LmNvbS9zL2ZpbGVzLzEvMDAwMy8xOTM4Lzk3NDcvZmlsZXMvTWVyY2F2dXMtTG9nby1XaGl0ZV8xMDI0eDEwMjQucG5nP3Y9MTUzOTg1NjYwNVwiXG4gICAgICAgICAgYWx0PVwibG9nb1wiXG4gICAgICAgIC8+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyO1xuIl19

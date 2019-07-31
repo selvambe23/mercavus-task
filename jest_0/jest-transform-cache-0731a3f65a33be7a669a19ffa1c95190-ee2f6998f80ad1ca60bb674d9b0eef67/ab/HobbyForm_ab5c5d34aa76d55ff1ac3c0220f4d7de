@@ -1,0 +1,151 @@
+8d3dbbfe23bd9b5fab8f33d01dfd6b29
+"use strict";
+
+var _interopRequireDefault = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+var _interopRequireWildcard = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _slicedToArray2 = _interopRequireDefault(require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/slicedToArray"));
+
+var _react = _interopRequireWildcard(require("react"));
+
+require("./HobbyForm.css");
+
+var _jsxFileName = "/Users/selvam_m1/Challenges/mercavus-task-challenge/src/Components/HobbyForm/HobbyForm.tsx";
+
+const UserForm = ({
+  addHobbiesFunc
+}) => {
+  const _useState = (0, _react.useState)(''),
+        _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+        hobby = _useState2[0],
+        setHobby = _useState2[1];
+
+  const _useState3 = (0, _react.useState)(''),
+        _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
+        year = _useState4[0],
+        setYear = _useState4[1];
+
+  const _useState5 = (0, _react.useState)('default'),
+        _useState6 = (0, _slicedToArray2.default)(_useState5, 2),
+        passion = _useState6[0],
+        setPassionLevel = _useState6[1];
+
+  const UserForm = _react.default.createElement("div", {
+    className: "userHobbyAddform",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: void 0
+  }, _react.default.createElement("div", {
+    className: "passionBox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: void 0
+  }, _react.default.createElement("select", {
+    value: passion,
+    onChange: e => setPassionLevel(e.target.value),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: void 0
+  }, _react.default.createElement("option", {
+    key: "0",
+    value: "default",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: void 0
+  }, "Select Passion Level"), _react.default.createElement("option", {
+    key: "1",
+    value: "Medium",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: void 0
+  }, "Medium"), _react.default.createElement("option", {
+    key: "2",
+    value: "Low",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: void 0
+  }, "Low"), _react.default.createElement("option", {
+    key: "3",
+    value: "High",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: void 0
+  }, "High"), _react.default.createElement("option", {
+    key: "4",
+    value: "Very-High",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: void 0
+  }, "Very-High"))), _react.default.createElement("div", {
+    className: "passionBox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: void 0
+  }, _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Enter User Hobby",
+    onChange: e => setHobby(e.target.value),
+    value: hobby,
+    className: "nameBox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: void 0
+  })), _react.default.createElement("div", {
+    className: "passionBox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: void 0
+  }, _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Enter Year",
+    value: year,
+    onChange: e => setYear(e.target.value),
+    className: "nameBox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: void 0
+  })), _react.default.createElement("button", {
+    onClick: e => addHobbiesFunc(e, hobby, year, passion),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: void 0
+  }, "Add"));
+
+  return UserForm;
+};
+
+var _default = UserForm;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhvYmJ5Rm9ybS50c3giXSwibmFtZXMiOlsiVXNlckZvcm0iLCJhZGRIb2JiaWVzRnVuYyIsImhvYmJ5Iiwic2V0SG9iYnkiLCJ5ZWFyIiwic2V0WWVhciIsInBhc3Npb24iLCJzZXRQYXNzaW9uTGV2ZWwiLCJlIiwidGFyZ2V0IiwidmFsdWUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7OztBQUVBLE1BQU1BLFFBQTRDLEdBQUcsQ0FBQztBQUFFQyxFQUFBQTtBQUFGLENBQUQsS0FBd0I7QUFBQSxvQkFDL0MscUJBQWMsRUFBZCxDQUQrQztBQUFBO0FBQUEsUUFDbEVDLEtBRGtFO0FBQUEsUUFDM0RDLFFBRDJEOztBQUFBLHFCQUVqRCxxQkFBYyxFQUFkLENBRmlEO0FBQUE7QUFBQSxRQUVsRUMsSUFGa0U7QUFBQSxRQUU1REMsT0FGNEQ7O0FBQUEscUJBR3RDLHFCQUFjLFNBQWQsQ0FIc0M7QUFBQTtBQUFBLFFBR2xFQyxPQUhrRTtBQUFBLFFBR3pEQyxlQUh5RDs7QUFLekUsUUFBTVAsUUFBUSxHQUFHO0FBQUssSUFBQSxTQUFTLEVBQUMsa0JBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDRztBQUFLLElBQUEsU0FBUyxFQUFDLFlBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDUTtBQUFRLElBQUEsS0FBSyxFQUFFTSxPQUFmO0FBQ0EsSUFBQSxRQUFRLEVBQUdFLENBQUQsSUFBT0QsZUFBZSxDQUFDQyxDQUFDLENBQUNDLE1BQUYsQ0FBU0MsS0FBVixDQURoQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUVJO0FBQVEsSUFBQSxHQUFHLEVBQUMsR0FBWjtBQUFnQixJQUFBLEtBQUssRUFBQyxTQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSw0QkFGSixFQUdJO0FBQVEsSUFBQSxHQUFHLEVBQUMsR0FBWjtBQUFnQixJQUFBLEtBQUssRUFBQyxRQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQUhKLEVBSUk7QUFBUSxJQUFBLEdBQUcsRUFBQyxHQUFaO0FBQWdCLElBQUEsS0FBSyxFQUFDLEtBQXRCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBSkosRUFLSTtBQUFRLElBQUEsR0FBRyxFQUFDLEdBQVo7QUFBZ0IsSUFBQSxLQUFLLEVBQUMsTUFBdEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFMSixFQU1JO0FBQVEsSUFBQSxHQUFHLEVBQUMsR0FBWjtBQUFnQixJQUFBLEtBQUssRUFBQyxXQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFOSixDQURSLENBREgsRUFXRztBQUFLLElBQUEsU0FBUyxFQUFDLFlBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDQTtBQUNJLElBQUEsSUFBSSxFQUFDLE1BRFQ7QUFFSSxJQUFBLFdBQVcsRUFBQyxrQkFGaEI7QUFHSSxJQUFBLFFBQVEsRUFBR0YsQ0FBRCxJQUFPTCxRQUFRLENBQUNLLENBQUMsQ0FBQ0MsTUFBRixDQUFTQyxLQUFWLENBSDdCO0FBSUksSUFBQSxLQUFLLEVBQUVSLEtBSlg7QUFLSSxJQUFBLFNBQVMsRUFBQyxTQUxkO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBREEsQ0FYSCxFQW1CRztBQUFLLElBQUEsU0FBUyxFQUFDLFlBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDQTtBQUNJLElBQUEsSUFBSSxFQUFDLE1BRFQ7QUFFSSxJQUFBLFdBQVcsRUFBQyxZQUZoQjtBQUdJLElBQUEsS0FBSyxFQUFFRSxJQUhYO0FBSUksSUFBQSxRQUFRLEVBQUdJLENBQUQsSUFBT0gsT0FBTyxDQUFDRyxDQUFDLENBQUNDLE1BQUYsQ0FBU0MsS0FBVixDQUo1QjtBQUtJLElBQUEsU0FBUyxFQUFDLFNBTGQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFEQSxDQW5CSCxFQTJCRztBQUFRLElBQUEsT0FBTyxFQUFHRixDQUFELElBQU9QLGNBQWMsQ0FBQ08sQ0FBRCxFQUFJTixLQUFKLEVBQVVFLElBQVYsRUFBZUUsT0FBZixDQUF0QztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQTNCSCxDQUFqQjs7QUE2QkEsU0FBT04sUUFBUDtBQUNILENBbkNEOztlQXFDZUEsUSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwge3VzZVN0YXRlfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBcIi4vSG9iYnlGb3JtLmNzc1wiO1xuXG5jb25zdCBVc2VyRm9ybTogIFJlYWN0LkZDPHsgYWRkSG9iYmllc0Z1bmM6IGFueSB9PiA9ICh7IGFkZEhvYmJpZXNGdW5jIH0pID0+IHtcbiAgICBjb25zdCBbaG9iYnksIHNldEhvYmJ5XSA9IHVzZVN0YXRlPGFueT4oJycpO1xuICAgIGNvbnN0IFt5ZWFyLCBzZXRZZWFyXSA9IHVzZVN0YXRlPGFueT4oJycpO1xuICAgIGNvbnN0IFtwYXNzaW9uLCBzZXRQYXNzaW9uTGV2ZWxdID0gdXNlU3RhdGU8YW55PignZGVmYXVsdCcpO1xuXG4gICAgY29uc3QgVXNlckZvcm0gPSA8ZGl2IGNsYXNzTmFtZT1cInVzZXJIb2JieUFkZGZvcm1cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFzc2lvbkJveFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c2VsZWN0IHZhbHVlPXtwYXNzaW9ufSBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRQYXNzaW9uTGV2ZWwoZS50YXJnZXQudmFsdWUpfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcHRpb24ga2V5PVwiMFwiIHZhbHVlPVwiZGVmYXVsdFwiPlNlbGVjdCBQYXNzaW9uIExldmVsPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8b3B0aW9uIGtleT1cIjFcIiB2YWx1ZT1cIk1lZGl1bVwiPk1lZGl1bTwvb3B0aW9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG9wdGlvbiBrZXk9XCIyXCIgdmFsdWU9XCJMb3dcIj5Mb3c8L29wdGlvbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcHRpb24ga2V5PVwiM1wiIHZhbHVlPVwiSGlnaFwiPkhpZ2g8L29wdGlvbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcHRpb24ga2V5PVwiNFwiIHZhbHVlPVwiVmVyeS1IaWdoXCI+VmVyeS1IaWdoPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc2VsZWN0PlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhc3Npb25Cb3hcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj1cIkVudGVyIFVzZXIgSG9iYnlcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0SG9iYnkoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtob2JieX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJuYW1lQm94XCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYXNzaW9uQm94XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJFbnRlciBZZWFyXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT17eWVhcn1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFllYXIoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cIm5hbWVCb3hcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eyhlKSA9PiBhZGRIb2JiaWVzRnVuYyhlLCBob2JieSx5ZWFyLHBhc3Npb24pfT5BZGQ8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICByZXR1cm4gVXNlckZvcm07XG59O1xuXG5leHBvcnQgZGVmYXVsdCBVc2VyRm9ybTsiXX0=

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HobbyForm Component renders snapshots, too 1`] = `
+<div
+  className="userHobbyAddform"
+>
+  <div
+    className="passionBox"
+  >
+    <select
+      onChange={[Function]}
+      value="default"
+    >
+      <option
+        value="default"
+      >
+        Select Passion Level
+      </option>
+      <option
+        value="Medium"
+      >
+        Medium
+      </option>
+      <option
+        value="Low"
+      >
+        Low
+      </option>
+      <option
+        value="High"
+      >
+        High
+      </option>
+      <option
+        value="Very-High"
+      >
+        Very-High
+      </option>
+    </select>
+  </div>
+  <div
+    className="passionBox"
+  >
+    <input
+      className="nameBox"
+      onChange={[Function]}
+      placeholder="Enter User Hobby"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="passionBox"
+  >
+    <input
+      className="nameBox"
+      onChange={[Function]}
+      placeholder="Enter Year"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+</div>
+`;

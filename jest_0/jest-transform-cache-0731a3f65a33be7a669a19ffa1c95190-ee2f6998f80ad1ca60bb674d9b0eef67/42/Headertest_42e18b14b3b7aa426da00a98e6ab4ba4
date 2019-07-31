@@ -1,0 +1,37 @@
+0190b6488d50b163d4a09f8c9f25edea
+"use strict";
+
+var _interopRequireWildcard = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+var React = _interopRequireWildcard(require("react"));
+
+var _enzyme = require("enzyme");
+
+var renderer = _interopRequireWildcard(require("react-test-renderer"));
+
+var _Header = _interopRequireDefault(require("./Header"));
+
+var _jsxFileName = "/Users/selvam_m1/Challenges/mercavus-task-challenge/src/Components/Header/Header.test.tsx";
+describe('Header Component', () => {
+  it('renders snapshots, too', () => {
+    const wrapper = (0, _enzyme.shallow)(React.createElement(_Header.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: void 0
+    }));
+    expect(wrapper.find('.header')).toBeDefined();
+    const tree = renderer.create(React.createElement(_Header.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: void 0
+    })).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhlYWRlci50ZXN0LnRzeCJdLCJuYW1lcyI6WyJkZXNjcmliZSIsIml0Iiwid3JhcHBlciIsImV4cGVjdCIsImZpbmQiLCJ0b0JlRGVmaW5lZCIsInRyZWUiLCJyZW5kZXJlciIsImNyZWF0ZSIsInRvSlNPTiIsInRvTWF0Y2hTbmFwc2hvdCJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBQ0E7OztBQUVBQSxRQUFRLENBQUMsa0JBQUQsRUFBcUIsTUFBTTtBQUNqQ0MsRUFBQUEsRUFBRSxDQUFDLHdCQUFELEVBQTJCLE1BQU07QUFDakMsVUFBTUMsT0FBTyxHQUFHLHFCQUFRLG9CQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsTUFBUixDQUFoQjtBQUNBQyxJQUFBQSxNQUFNLENBQUNELE9BQU8sQ0FBQ0UsSUFBUixDQUFhLFNBQWIsQ0FBRCxDQUFOLENBQWdDQyxXQUFoQztBQUVBLFVBQU1DLElBQUksR0FBR0MsUUFBUSxDQUNsQkMsTUFEVSxDQUNILG9CQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsTUFERyxFQUVWQyxNQUZVLEVBQWI7QUFHQU4sSUFBQUEsTUFBTSxDQUFDRyxJQUFELENBQU4sQ0FBYUksZUFBYjtBQUNELEdBUkMsQ0FBRjtBQVNELENBVk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IHNoYWxsb3cgfSBmcm9tICdlbnp5bWUnO1xuaW1wb3J0ICogYXMgcmVuZGVyZXIgZnJvbSBcInJlYWN0LXRlc3QtcmVuZGVyZXJcIjtcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInO1xuXG5kZXNjcmliZSgnSGVhZGVyIENvbXBvbmVudCcsICgpID0+IHtcbiAgaXQoJ3JlbmRlcnMgc25hcHNob3RzLCB0b28nLCAoKSA9PiB7XG4gICAgY29uc3Qgd3JhcHBlciA9IHNoYWxsb3coPEhlYWRlci8+KTtcbiAgICBleHBlY3Qod3JhcHBlci5maW5kKCcuaGVhZGVyJykpLnRvQmVEZWZpbmVkKCk7XG5cbiAgICBjb25zdCB0cmVlID0gcmVuZGVyZXJcbiAgICAgIC5jcmVhdGUoPEhlYWRlciAvPilcbiAgICAgIC50b0pTT04oKTtcbiAgICBleHBlY3QodHJlZSkudG9NYXRjaFNuYXBzaG90KCk7XG4gIH0pXG59KTsiXX0=

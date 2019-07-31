@@ -1,0 +1,154 @@
+033fa8b435a080a911a85e6f6299c473
+"use strict";
+
+var _interopRequireDefault = require("/Users/selvam_m1/Challenges/mercavus-task-challenge/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./HobbyTable.css");
+
+var _HobbyForm = _interopRequireDefault(require("../HobbyForm/HobbyForm"));
+
+var _jsxFileName = "/Users/selvam_m1/Challenges/mercavus-task-challenge/src/Components/HobbyTable/HobbyTable.tsx";
+
+const HobbyTable = ({
+  userHobbyData,
+  userName,
+  handleConfirmBox,
+  handleHobbbyAdd
+}) => {
+  const addHobbies = (e, hobby, year, passion) => {
+    e.preventDefault();
+    const newHobbies = {
+      "passion": passion,
+      "name": hobby,
+      "year": year
+    };
+    userHobbyData.hobbies.push(newHobbies);
+    handleHobbbyAdd(e, userHobbyData);
+  };
+
+  const getHobbies = hobbies => {
+    if (!hobbies) return _react.default.createElement(_react.default.Fragment, null);
+    return _react.default.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: void 0
+    }, _react.default.createElement("h3", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: void 0
+    }, userName, " Hobbies"), hobbies.map((hobby, index) => getHobbyItem(hobby, index)));
+  };
+
+  const getHobbyItem = (hobby, index) => {
+    return _react.default.createElement("div", {
+      key: index,
+      className: "hobbyItems",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: void 0
+    }, _react.default.createElement("div", {
+      className: "passionBlock",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: void 0
+    }, _react.default.createElement("label", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: void 0
+    }, "Passion: "), _react.default.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: void 0
+    }, hobby.passion)), _react.default.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: void 0
+    }, _react.default.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: void 0
+    }, hobby.name)), _react.default.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: void 0
+    }, _react.default.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: void 0
+    }, hobby.year)), _react.default.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: void 0
+    }, _react.default.createElement("span", {
+      className: "deleteLink",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: void 0
+    }, _react.default.createElement("button", {
+      onClick: () => handleConfirmBox(userHobbyData, index),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: void 0
+    }, "Delete"))));
+  };
+
+  return _react.default.createElement("div", {
+    className: "hobbyLists",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: void 0
+  }, _react.default.createElement(_HobbyForm.default, {
+    addHobbiesFunc: addHobbies,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: void 0
+  }), _react.default.createElement("div", {
+    className: "hobbiesItems",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: void 0
+  }, userHobbyData && getHobbies(userHobbyData.hobbies)));
+};
+
+var _default = HobbyTable;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhvYmJ5VGFibGUudHN4Il0sIm5hbWVzIjpbIkhvYmJ5VGFibGUiLCJ1c2VySG9iYnlEYXRhIiwidXNlck5hbWUiLCJoYW5kbGVDb25maXJtQm94IiwiaGFuZGxlSG9iYmJ5QWRkIiwiYWRkSG9iYmllcyIsImUiLCJob2JieSIsInllYXIiLCJwYXNzaW9uIiwicHJldmVudERlZmF1bHQiLCJuZXdIb2JiaWVzIiwiaG9iYmllcyIsInB1c2giLCJnZXRIb2JiaWVzIiwibWFwIiwiaW5kZXgiLCJnZXRIb2JieUl0ZW0iLCJuYW1lIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7OztBQUVBLE1BQU1BLFVBQXNILEdBQUcsQ0FBQztBQUFFQyxFQUFBQSxhQUFGO0FBQWlCQyxFQUFBQSxRQUFqQjtBQUEyQkMsRUFBQUEsZ0JBQTNCO0FBQTZDQyxFQUFBQTtBQUE3QyxDQUFELEtBQW9FO0FBQy9MLFFBQU1DLFVBQVUsR0FBRyxDQUFDQyxDQUFELEVBQVNDLEtBQVQsRUFBcUJDLElBQXJCLEVBQWdDQyxPQUFoQyxLQUFpRDtBQUNqRUgsSUFBQUEsQ0FBQyxDQUFDSSxjQUFGO0FBQ0EsVUFBTUMsVUFBVSxHQUFHO0FBQ2xCLGlCQUFXRixPQURPO0FBRWxCLGNBQVFGLEtBRlU7QUFHbEIsY0FBUUM7QUFIVSxLQUFuQjtBQUtEUCxJQUFBQSxhQUFhLENBQUNXLE9BQWQsQ0FBc0JDLElBQXRCLENBQTJCRixVQUEzQjtBQUNBUCxJQUFBQSxlQUFlLENBQUNFLENBQUQsRUFBSUwsYUFBSixDQUFmO0FBQ0QsR0FURDs7QUFXQSxRQUFNYSxVQUFVLEdBQUlGLE9BQUQsSUFBa0I7QUFDakMsUUFBSSxDQUFDQSxPQUFMLEVBQ0EsT0FBTywyREFBUDtBQUVBLFdBQVE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDUjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUFLVixRQUFMLGFBRFEsRUFFUFUsT0FBTyxDQUFDRyxHQUFSLENBQVksQ0FBQ1IsS0FBRCxFQUFhUyxLQUFiLEtBQTRCQyxZQUFZLENBQUNWLEtBQUQsRUFBUVMsS0FBUixDQUFwRCxDQUZPLENBQVI7QUFJSCxHQVJEOztBQVVBLFFBQU1DLFlBQVksR0FBRyxDQUFDVixLQUFELEVBQWFTLEtBQWIsS0FBNEI7QUFDN0MsV0FBUTtBQUFLLE1BQUEsR0FBRyxFQUFFQSxLQUFWO0FBQWlCLE1BQUEsU0FBUyxFQUFDLFlBQTNCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BQ0o7QUFBSyxNQUFBLFNBQVMsRUFBQyxjQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBREEsRUFFQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUFPVCxLQUFLLENBQUNFLE9BQWIsQ0FGQSxDQURJLEVBTUo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUFPRixLQUFLLENBQUNXLElBQWIsQ0FEQSxDQU5JLEVBVUo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxPQUFPWCxLQUFLLENBQUNDLElBQWIsQ0FEQSxDQVZJLEVBY0o7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsT0FDQTtBQUFNLE1BQUEsU0FBUyxFQUFDLFlBQWhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BQ0U7QUFBUSxNQUFBLE9BQU8sRUFBRSxNQUFNTCxnQkFBZ0IsQ0FBQ0YsYUFBRCxFQUFnQmUsS0FBaEIsQ0FBdkM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBREYsQ0FEQSxDQWRJLENBQVI7QUF1QkgsR0F4QkQ7O0FBeUJBLFNBQ0E7QUFBSyxJQUFBLFNBQVMsRUFBQyxZQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0ksNkJBQUMsa0JBQUQ7QUFBVyxJQUFBLGNBQWMsRUFBRVgsVUFBM0I7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFESixFQUVJO0FBQUssSUFBQSxTQUFTLEVBQUMsY0FBZjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUNHSixhQUFhLElBQUlhLFVBQVUsQ0FBQ2IsYUFBYSxDQUFDVyxPQUFmLENBRDlCLENBRkosQ0FEQTtBQVFILENBdkREOztlQXlEZVosVSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBcIi4vSG9iYnlUYWJsZS5jc3NcIjtcbmltcG9ydCBIb2JieUZvcm0gZnJvbSAnLi4vSG9iYnlGb3JtL0hvYmJ5Rm9ybSc7XG5cbmNvbnN0IEhvYmJ5VGFibGU6ICBSZWFjdC5GQzx7IHVzZXJIb2JieURhdGE6IGFueSwgdXNlck5hbWU6IFN0cmluZywgaGFuZGxlQ29uZmlybUJveDogRnVuY3Rpb24sIGhhbmRsZUhvYmJieUFkZDogRnVuY3Rpb24gfT4gPSAoeyB1c2VySG9iYnlEYXRhLCB1c2VyTmFtZSwgaGFuZGxlQ29uZmlybUJveCwgaGFuZGxlSG9iYmJ5QWRkIH0pID0+IHtcbiAgICBjb25zdCBhZGRIb2JiaWVzID0gKGU6IGFueSwgaG9iYnk6IGFueSAseWVhcjogYW55LCBwYXNzaW9uOiBhbnkpID0+IHtcbiAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgICAgY29uc3QgbmV3SG9iYmllcyA9IHtcbiAgICAgICAgXCJwYXNzaW9uXCI6IHBhc3Npb24sXG4gICAgICAgIFwibmFtZVwiOiBob2JieSxcbiAgICAgICAgXCJ5ZWFyXCI6IHllYXJcbiAgICAgIH07XG4gICAgICB1c2VySG9iYnlEYXRhLmhvYmJpZXMucHVzaChuZXdIb2JiaWVzKTtcbiAgICAgIGhhbmRsZUhvYmJieUFkZChlLCB1c2VySG9iYnlEYXRhKTtcbiAgICB9XG4gICAgXG4gICAgY29uc3QgZ2V0SG9iYmllcyA9IChob2JiaWVzOiBhbnkpID0+IHtcbiAgICAgICAgaWYgKCFob2JiaWVzKVxuICAgICAgICByZXR1cm4gPD48Lz5cbiAgICBcbiAgICAgICAgcmV0dXJuICg8ZGl2PlxuICAgICAgICA8aDM+e3VzZXJOYW1lfSBIb2JiaWVzPC9oMz5cbiAgICAgICAge2hvYmJpZXMubWFwKChob2JieTogYW55LCBpbmRleDogYW55KSA9PiBnZXRIb2JieUl0ZW0oaG9iYnksIGluZGV4KSl9XG4gICAgICAgIDwvZGl2PilcbiAgICB9O1xuXG4gICAgY29uc3QgZ2V0SG9iYnlJdGVtID0gKGhvYmJ5OiBhbnksIGluZGV4OiBhbnkpID0+IHtcbiAgICAgICAgcmV0dXJuICg8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT1cImhvYmJ5SXRlbXNcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFzc2lvbkJsb2NrXCI+XG4gICAgICAgICAgICA8bGFiZWw+UGFzc2lvbjogPC9sYWJlbD5cbiAgICAgICAgICAgIDxzcGFuPntob2JieS5wYXNzaW9ufTwvc3Bhbj5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPHNwYW4+e2hvYmJ5Lm5hbWV9PC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8c3Bhbj57aG9iYnkueWVhcn08L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImRlbGV0ZUxpbmtcIj5cbiAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBoYW5kbGVDb25maXJtQm94KHVzZXJIb2JieURhdGEsIGluZGV4KX0+XG4gICAgICAgICAgICAgICAgRGVsZXRlXG4gICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPC9kaXY+KTtcbiAgICB9XG4gICAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhvYmJ5TGlzdHNcIj5cbiAgICAgICAgPEhvYmJ5Rm9ybSBhZGRIb2JiaWVzRnVuYz17YWRkSG9iYmllc30gLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJob2JiaWVzSXRlbXNcIj5cbiAgICAgICAgICB7dXNlckhvYmJ5RGF0YSAmJiBnZXRIb2JiaWVzKHVzZXJIb2JieURhdGEuaG9iYmllcyl9XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIClcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhvYmJ5VGFibGU7Il19
