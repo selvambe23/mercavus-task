@@ -45,7 +45,12 @@ const UserForm: React.FC<{ addHobbiesFunc: any }> = ({ addHobbiesFunc }) => {
           className="nameBox"
         />
       </div>
-      <button onClick={e => addHobbiesFunc(e, hobby, year, passion)}>
+      <button onClick={e => {
+        addHobbiesFunc(e, hobby, year, passion);
+        setPassionLevel("default");
+        setHobby("");
+        setYear("");
+      }}>
         Add
       </button>
     </div>
