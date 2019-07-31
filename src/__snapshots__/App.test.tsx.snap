@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component renders snapshots, too 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="header-content"
+    >
+      <img
+        alt="logo"
+        src="https://cdn.shopify.com/s/files/1/0003/1938/9747/files/Mercavus-Logo-White_1024x1024.png?v=1539856605"
+      />
+    </div>
+  </div>
+  <div
+    className="ReactTable"
+  >
+    <div
+      className="userHobbyDetails"
+    >
+      <div
+        className="userDetails"
+      >
+        <h1>
+          User Lists
+        </h1>
+        <div
+          className="userAddForm"
+        >
+          <div
+            className="userAddform"
+          >
+            <input
+              className="nameBox"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+            <button
+              onClick={[Function]}
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        <div
+          className="userLists"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
