@@ -4,8 +4,9 @@
   "private": true,
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
-    "@types/enzyme": "3.10.3",
     "@types/jest": "24.0.15",
+    "ts-jest": "^23.0.1",
+    "jest": "^23.4.2",
     "@types/lodash": "^4.14.136",
     "@types/node": "12.6.8",
     "@types/react": "16.8.23",
@@ -25,7 +26,7 @@
   "scripts": {
     "start": "concurrently \"json-server db.json -p 4000\" \"react-scripts start\" --name=server",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/react-test-renderer": "^16.8.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "react-test-renderer": "^16.8.6"
   }
 }

@@ -1,9 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import { shallow } from 'enzyme';
 import Header from './Header';
 
-describe("Header Should be rendered one time", () => {
-    it("should render header component", () => {
-      const wrapper = shallow(<Header />);
-    });
+describe('Header Component', () => {
+  it('renders snapshots, too', () => {
+    const wrapper = shallow(<Header/>);
+    expect(wrapper.find('.header')).toBeDefined();
+  })
 });
